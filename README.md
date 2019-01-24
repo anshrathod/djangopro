@@ -1,6 +1,6 @@
 # DJANGO-PROJECT
-This is a website created using html,css,javascript(for frontend)
-and python's django framework(for backend)
+This is a website created using html,css,javascript (for frontend)
+and python's django framework (for backend)
 ### Running the server
 
 Type the following  in the command prompt
