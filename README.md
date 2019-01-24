@@ -2,8 +2,9 @@
 This is a website created using html,css,javascript(for frontend)
 and python's django framework(for backend)
 ### Running the server
-cd into djangopro
+
 type the following  in the command prompt
+ - cd into the project directory
  - python manage.py migrate
  - python manage.py make migrations
  - python manage.py runserver
