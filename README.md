@@ -2,7 +2,9 @@
 
 ## GAMES PAGE
 
-![main2](https://user-images.githubusercontent.com/32770069/51695371-e8525000-2028-11e9-8175-0f46da91b9e6.png)
+![main](https://user-images.githubusercontent.com/32770069/51695989-606d4580-202a-11e9-8614-44760974db78.png)
+
+
 
 ## ABOUTUS PAGE
 
