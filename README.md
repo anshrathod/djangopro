@@ -3,7 +3,7 @@ This is a website created using html,css,javascript(for frontend)
 and python's django framework(for backend)
 ### Running the server
 
-type the following  in the command prompt
+Type the following  in the command prompt
  - cd into the project directory
  - python manage.py migrate
  - python manage.py make migrations
