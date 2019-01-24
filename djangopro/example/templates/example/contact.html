@@ -1,0 +1,42 @@
+{% extends 'example/base.html'%}
+{% block body %}
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>CONTACT US</title>
+</head>
+<body>
+    <span id="contact-span" style="font-family:Showcard Gothic; color:#E48632;font-size:45px; left:7%;position:relative;"><br>GET IN TOUCH</span>
+			<div class="contact-div">
+				 <hr style="display:block;border: 1px solid #FF7700;">
+				<p style="color:white;font-size:23px;">We would love to hear from you.<br> Feel free to drop your suggestions and reviews or contact us at anytime.</p>
+				<div class="col1">
+					<div style="color: white"><h2>LEAVE US A MESSAGE</h2></div>
+					<form action=# method="post">
+						<input class="contact" type="text" name="fname" placeholder="Name" required="">
+						<input class="contact" type="text" name="email" placeholder="Email" required="">
+						<textarea class="contact" name = "text" placeholder="Message" required="" style="height: 170px;"></textarea>
+						<input type="submit" value="Submit" name = "loginbtn">
+					</form>
+				</div>
+				<div class="col1">
+					<div style="color: white"><h2>OUR DETAILS</h2></div>
+					<p class="wh">
+						Phone : <span class="oran"> (022)-25684386</span><br><br>
+						Email : <span class="oran"> pshub@gmail.com</span><br><br>
+						Website : <span class="oran"> <a href="www.pshub.cf" style="color: #F39C12;target : _blank">www.pshub.cf</a></span> <br><br>
+						Address : <span class="oran"> 221 B Baker Street </span>
+					</p>
+
+					<a href="#" class="fa fa-facebook"></a>
+					<a href="#" class="fa fa-twitter"></a>
+					<a href="#" class="fa fa-instagram"></a>
+					<a href="#" class="fa fa-linkedin"></a>
+					<a href="#" class="fa fa-pinterest"></a>
+					<br><br><br><br><br><br>
+				</div>
+</div>
+</body>
+</html>
+
+{% endblock %}

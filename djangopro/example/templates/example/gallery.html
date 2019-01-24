@@ -1,0 +1,139 @@
+{% extends 'example/base.html'%}
+
+{% block body %}
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>GALLERY</title>
+</head>
+<body>
+    <div id="gallery">
+			<span id="gallery-span" style="font-family:Showcard Gothic; color:#E48632;font-size:45px;left:7%;position:relative;"><br> GALLERY</span>
+			<div class="about-gallery">
+			<hr style="display:block;border: 1px solid #FF7700;">
+			<p style="color: white; font-size: 23px">Take a look at these awesome pictures and awaken the dormant gamer within you! <br>
+			Get these games now!!!</p>
+
+			<div class="slideshow-container">
+
+			<div class="mySlides sfade">
+			  <div class="numbertext">1 / 10</div>
+			  <img class="img-gallery" src="images/bloodborne.jpg" style="width:100%">
+			  <div class="caption">Bloodborne</div>
+			</div>
+
+			<div class="mySlides sfade">
+			  <div class="numbertext">2 / 10</div>
+			  <img class="img-gallery" src="images/shadow-of-colossus.jpg" style="width:100%">
+			  <div class="caption">Shadow of the Colossus</div>
+			</div>
+
+			<div class="mySlides sfade">
+			  <div class="numbertext">3 / 10</div>
+			  <img class="img-gallery" src="images/god-of-war.jpg" style="width:100%">
+			  <div class="caption">God of War</div>
+			</div>
+
+			<div class="mySlides sfade">
+			  <div class="numbertext">4 / 10</div>
+			  <img class="img-gallery" src="images/horizon-zero-dawn.jpg" style="width:100%">
+			  <div class="caption">Horizon Zero Dawn</div>
+			</div>
+
+			<div class="mySlides sfade">
+			  <div class="numbertext">5 / 10</div>
+			  <img class="img-gallery" src="images/deadnation.jpg" style="width:100%">
+			  <div class="caption">Deadnation</div>
+			</div>
+
+			<div class="mySlides sfade">
+			  <div class="numbertext">6 / 10</div>
+			  <img class="img-gallery" src="images/gt-sport.jpg" style="width:100%">
+			  <div class="caption">GT Sport</div>
+			</div>
+
+			<div class="mySlides sfade">
+			  <div class="numbertext">7 / 10</div>
+			  <img class="img-gallery" src="images/monster-hunter-world.jpg" style="width:100%">
+			  <div class="caption">Monster Hunter World</div>
+			</div>
+
+			<div class="mySlides sfade">
+			  <div class="numbertext">8 / 10</div>
+			  <img class="img-gallery" src="images/farcry-5.jpg" style="width:100%">
+			  <div class="caption">FarCry 5</div>
+			</div>
+
+			<div class="mySlides sfade">
+			  <div class="numbertext">9 / 10</div>
+			  <img class="img-gallery" src="images/uncharted-4.jpg" style="width:100%">
+			  <div class="caption">Uncharted 4</div>
+			</div>
+
+			<div class="mySlides sfade">
+			  <div class="numbertext">10 / 10</div>
+			  <img class="img-gallery" src="images/fortnite.jpg" style="width:100%">
+			  <div class="caption">Fortnite</div>
+			</div>
+
+			</div>
+			<br>
+
+			<div style="text-align:center">
+			  <span class="dot"></span>
+			  <span class="dot"></span>
+			  <span class="dot"></span>
+			  <span class="dot"></span>
+			  <span class="dot"></span>
+			  <span class="dot"></span>
+			  <span class="dot"></span>
+			  <span class="dot"></span>
+			  <span class="dot"></span>
+			  <span class="dot"></span>
+			</div>
+			</div>
+		</div>
+<script>
+		var modal4=document.getElementById('id01');
+		var modal1=document.getElementById('game1-modal');
+		var modal2=document.getElementById('game2-modal');
+		var modal3=document.getElementById('game3-modal');
+		window.onclick = function(event) {
+			if (event.target == modal1) {
+				modal1.style.display = "none";
+			}
+			else if (event.target == modal2) {
+				modal2.style.display = "none";
+			}
+			else if (event.target == modal3) {
+				modal3.style.display = "none";
+			}
+			else if (event.target == modal4) {
+				modal4.style.display = "none";
+			}
+		}
+		var slideIndex = 0;
+		showSlides();
+		function showSlides() {
+			var i;
+			var slides = document.getElementsByClassName("mySlides");
+			var dots = document.getElementsByClassName("dot");
+			for (i = 0; i < slides.length; i++) {
+			   slides[i].style.display = "none";
+			}
+			slideIndex++;
+			if (slideIndex > slides.length) {slideIndex = 1}
+			for (i = 0; i < dots.length; i++) {
+				dots[i].className = dots[i].className.replace(" active", "");
+			}
+			slides[slideIndex-1].style.display = "block";
+			dots[slideIndex-1].className += " active";
+			setTimeout(showSlides, 3000); // Change image every 2 seconds
+		}
+	</script>
+
+
+</body>
+</html>
+
+{% endblock %}

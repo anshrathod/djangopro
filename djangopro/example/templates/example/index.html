@@ -1,0 +1,134 @@
+{% extends 'example/base.html'%}
+
+{%block title%}SIGN UP  {% endblock %}
+{% block body %}
+<html>
+	<style>
+		#background  : url("https://raw.githubusercontent.com/anshrathod/image/master/controller.jpg?token=AfQIFTenzj2kXjXAxr21OSSuQ85iS3omks5cRxwCwA%3D%3D") ;
+			background-size: cover;
+			color:white;
+
+
+		}
+		.round3 {
+      		border: 2px solid white;
+    		border-radius: 12px;
+    		padding :2px 2px ;
+    		color :white;
+    		margin-right: 40%;
+    		margin-left: 40%;
+				}
+		input[type=text], select
+		{
+		    width: 100%;
+		    padding: 12px 20px;
+		    margin: 8px 0;
+		    display: inline-block;
+		    border: 1px solid #ccc;
+		    border-radius: 10px;
+		    box-sizing: border-box;
+		    color:black;
+		}
+		input[type=password], select
+		{
+		    width: 100%;
+		    padding: 12px 20px;
+		    margin: 8px 0;
+		    display: inline-block;
+		    border: 1px solid #ccc;
+		    border-radius: 10px;
+		    box-sizing: border-box;
+		    color:black;
+		}
+		input[type=email], select
+		{
+		    width: 100%;
+		    padding: 12px 20px;
+		    margin: 8px 0;
+		    display: inline-block;
+		    border: 1px solid #ccc;
+		    border-radius: 10px;
+		    box-sizing: border-box;
+		    color:black;
+		}
+		input[type=submit] {
+		    width: 100%;
+		    background-color: #4CAF50;
+		    color: white;
+		    padding: 14px 20px;
+		    margin: 8px 0;
+		    border: none;
+		    border-radius: 10px;
+		    cursor: pointer;
+		    font-size:25px;
+		}
+
+		input[type=submit]:hover {
+		    background-color: #45a049;
+		}
+
+		li
+		{
+	        float: left
+
+        }
+        a:link{
+        	text-decoration: none;
+        }
+
+	</style>
+	<body id="background">
+		<h1 class = "round3" align = "center";>Sign Up</h1>
+
+		<form class = "repeat" style="margin-right: 30%;margin-left: 30%; font-size: 25px; ">
+			<fieldset style="border-radius:15px ">
+				<legend style="color:white ; font-size:150% ;"> PlayStation Account</legend>
+				 <label for="fname">First Name</label>
+     			 <input type="text" id="fname" name="firstname"  autofocus required="" placeholder="First name..">
+
+    			 <label for="lname">Last Name</label>
+    			 <input type="text" id="lname" name="lastname" placeholder="Last name..">
+
+    		 	 <label for="email">Email-id</label>
+    			 <input type="email" id="Email-id" name="Email-id" required="" placeholder="Email-id..">
+
+
+				 Username: <br>
+				<input name = "username" type = "text" id="username" name="username" placeholder="Username.." required=""> <br>
+				Password: <br>
+				<input name = "password" type = "text" id="password" name="password" placeholder="Password.." "required="">
+				<br><br>
+				<input type="submit" onclick="alert(Account created!!!)"  value="Submit">
+				<!--input type = "submit" value = "Sign Up"-->
+			</fieldset>
+		</form>
+	</div>
+
+
+
+
+
+	</body>
+</html>
+{% endblock %}
+
+<!--
+<!DOCTYPE html>
+<html>
+<style>
+
+</style>
+<body>
+
+<h3>Using CSS to style an HTML Form</h3>
+
+<div>
+  <form action="/action_page.php">
+
+  </form>
+</div>
+
+</body>
+</html>
+-->
+
