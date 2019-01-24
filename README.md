@@ -1,4 +1,14 @@
 # DJANGO-PROJECT
+This is a website created using html,css,javascript(for frontend)
+and python's django framework(for backend)
+### running the server
+cd into djangopro
+type the following  in the command prompt
+ - python manage.py migrate
+ - python manage.py make migrations
+ - python manage.py runserver
+You can visit the website on this url :- http://127.0.0.1:8000/
+
 
 ## GAMES PAGE
 
