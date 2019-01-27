@@ -4,10 +4,14 @@ and python's django framework (for backend)
 ### Running the server
 
 Type the following  in the command prompt
- - cd into the project directory
- - python manage.py migrate
- - python manage.py make migrations
- - python manage.py runserver
+
+ ` cd into the project directory`
+  
+ ` python manage.py migrate` 
+ 
+ ` python manage.py make migrations`
+ 
+ ` python manage.py runserver`
  
  
 You can visit the website on this url :- http://127.0.0.1:8000/
